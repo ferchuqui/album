@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Panini - Página 2</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ==========================================
+           PANEL DERECHO: TABLA FIFA WORLD CUP 2026
+           ========================================== */
+        .right-panel {
+            background-color: #ffffff;
+            padding: 30px 35px;
+        }
+
+        .right-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        /* Encabezado del panel derecho */
+        .right-header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .wc-title {
+            font-size: 1.4rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1a237e;
+            border-bottom: 4px solid #D32F2F;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .wc-subtitle {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        /* Tabla */
+        .table-wrapper {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .wc-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.75rem;
+        }
+
+        .wc-table thead tr {
+            background-color: #1a237e;
+            color: #ffffff;
+        }
+
+        .wc-table thead th {
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.65rem;
+        }
+
+        .wc-table tbody tr {
+            border-bottom: 1px solid #eeeeee;
+            transition: background-color 0.2s ease;
+        }
+
+        .wc-table tbody tr:nth-child(even) {
+            background-color: #f5f7ff;
+        }
+
+        .wc-table tbody tr:hover {
+            background-color: #e8eaf6;
+        }
+
+        .wc-table tbody td {
+            padding: 7px 10px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .wc-table tbody td:first-child {
+            color: #999;
+            font-weight: 700;
+            font-size: 0.6rem;
+        }
+
+        .wc-table tbody td:last-child {
+            font-weight: 900;
+            color: #1a237e;
+            text-align: center;
+        }
+
+        /* Footer del panel derecho */
+        .right-footer-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 12px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            margin-top: 12px;
+        }
+
+        .panini-right {
+            height: 30px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Panel izquierdo de la página 2 */
+        .left-panel-p2 {
+            background-color: #ffffff;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 35px;
+        }
+
+        .left-placeholder {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 0.85rem;
+            font-style: italic;
+            border: 2px dashed #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .page-number {
+            font-size: 0.65rem;
+            color: #bbb;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="album-container">
+
+        <!-- PANEL IZQUIERDO: TABLA FIFA WORLD CUP 2026 (Página 2 - izquierda) -->
+        <div class="panel right-panel">
+            <div class="right-content">
+
+                <!-- Título principal -->
+                <div class="right-header">
+                    <h1 class="wc-title">FIFA World Cup 2026</h1>
+                    <div class="wc-subtitle">Official Sticker Collection</div>
+                </div>
+
+                <!-- Tabla de grupos / participantes -->
+                <div class="table-wrapper">
+                    <table class="wc-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>País</th>
+                                <th>Confederación</th>
+                                <th>Grupo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>🇺🇸 Estados Unidos</td><td>CONCACAF</td><td>A</td></tr>
+                            <tr><td>2</td><td>🇲🇽 México</td><td>CONCACAF</td><td>A</td></tr>
+                            <tr><td>3</td><td>🇨🇦 Canadá</td><td>CONCACAF</td><td>B</td></tr>
+                            <tr><td>4</td><td>🇧🇷 Brasil</td><td>CONMEBOL</td><td>B</td></tr>
+                            <tr><td>5</td><td>🇦🇷 Argentina</td><td>CONMEBOL</td><td>C</td></tr>
+                            <tr><td>6</td><td>🇫🇷 Francia</td><td>UEFA</td><td>C</td></tr>
+                            <tr><td>7</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra</td><td>UEFA</td><td>D</td></tr>
+                            <tr><td>8</td><td>🇩🇪 Alemania</td><td>UEFA</td><td>D</td></tr>
+                            <tr><td>9</td><td>🇪🇸 España</td><td>UEFA</td><td>E</td></tr>
+                            <tr><td>10</td><td>🇵🇹 Portugal</td><td>UEFA</td><td>E</td></tr>
+                            <tr><td>11</td><td>🇳🇱 Países Bajos</td><td>UEFA</td><td>F</td></tr>
+                            <tr><td>12</td><td>🇧🇪 Bélgica</td><td>UEFA</td><td>F</td></tr>
+                            <tr><td>13</td><td>🇯🇵 Japón</td><td>AFC</td><td>G</td></tr>
+                            <tr><td>14</td><td>🇰🇷 Corea del Sur</td><td>AFC</td><td>G</td></tr>
+                            <tr><td>15</td><td>🇸🇦 Arabia Saudita</td><td>AFC</td><td>H</td></tr>
+                            <tr><td>16</td><td>🇲🇦 Marruecos</td><td>CAF</td><td>H</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Footer con logo Panini -->
+                <div class="right-footer-bar">
+                    <img src="images/logopanini.png" alt="Logo Panini" class="panini-right">
+                </div>
+
+            </div>
+        </div>
+
+<!-- PANEL DERECHO: GRUPOS DEL MUNDIAL FIFA 2026 -->
+<div class="panel grupos-panel">
+    <h2 class="grupos-title">FIFA WORLD CUP 2026</h2>
+    <div class="grupos-grid">
+
+        <div class="grupo grupo-a">
+            <div class="grupo-header">A</div>
+            <ul>
+                <li>🇲🇽 México</li>
+                <li>🇿🇦 Sudáfrica</li>
+                <li>🇰🇷 Corea del Sur</li>
+                <li>🇨🇿 Chequia</li>
+            </ul>
+        </div>
+
+        <div class="grupo grupo-b">
+            <div class="grupo-header">B</div>
+            <ul>
+                <li>🇨🇦 Canadá</li>
+                <li>🇧🇦 Bosnia</li>
+                <li>🇶🇦 Qatar</li>
+                <li>🇨🇭 Suiza</li>
+            </ul>
+        </div>
+
+                <div class="grupo grupo-c">
+            <div class="grupo-header">C</div>
+            <ul>
+                <li>🇲🇽 Brasil</li>
+                <li>🇿🇦 Marruecos</li>
+                <li>🇰🇷 Haiti</li>
+                <li>🇨🇿 Escocia</li>
+            </ul>
+        </div>
+
+        <div class="grupo grupo-d">
+            <div class="grupo-header">D</div>
+            <ul>
+                <li>🇨🇦 USA</li>
+                <li>🇧🇦 Paraguay</li>
+                <li>🇶🇦 Australia</li>
+                <li>🇨🇭 Turkiye</li>
+            </ul>
+        </div>
+
+                        <div class="grupo grupo-e">
+            <div class="grupo-header">E</div>
+            <ul>
+                <li>🇲🇽 Germany</li>
+                <li>🇿🇦 Curaçao</li>
+                <li>🇰🇷 Costa de Marfil</li>
+                <li>🇨🇿 Ecuador</li>
+            </ul>
+        </div>
+
+        <div class="grupo grupo-f">
+            <div class="grupo-header">F</div>
+            <ul>
+                <li>🇨🇦 Netherlands</li>
+                <li>🇧🇦 Japan</li>
+                <li>🇶🇦 Sweden</li>
+                <li>🇨🇭 Tunisia</li>
+            </ul>
+        </div>
+
+                               <div class="grupo grupo-g">
+            <div class="grupo-header">G</div>
+            <ul>
+                <li>🇲🇽 Belgica</li>
+                <li>🇿🇦 Egipto</li>
+                <li>🇰🇷 Iran</li>
+                <li>🇨🇿 New Zealand</li>
+            </ul>
+        </div>
+
+        <div class="grupo grupo-h">
+            <div class="grupo-header">H</div>
+            <ul>
+                <li>🇨🇦 España</li>
+                <li>🇧🇦 Cabo Verde</li>
+                <li>🇶🇦 Arabia Saudita</li>
+                <li>🇨🇭 Uruguay</li>
+            </ul>
+        </div>
+
+
+        <!-- Repetí el patrón para todos los grupos C hasta L -->
+        <!-- Agrega un div.grupo por cada grupo con su letra y sus 4 selecciones -->
+
+    </div>
+</div>
+
+</body>
+
+</html>

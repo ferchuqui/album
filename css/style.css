@@ -1,0 +1,219 @@
+/* ==========================================
+   ESTILOS GENERALES Y CUERPO (BODY)
+   ========================================== */
+:root {
+    --white: #FFFFFF;
+    --dark-bg: #121212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    background-image: radial-gradient(circle at center, #2e2e2e 0%, #121212 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ==========================================
+   CONTENEDOR DEL ÁLBUM ABIERTO (PROPORCIÓN 42 x 27)
+   ========================================== */
+.album-container {
+    display: flex; /* Alinea los paneles izquierdo y derecho horizontalmente */
+    width: 100%;
+    max-width: 1120px; /* Escalado proporcional en pantalla */
+    aspect-ratio: 42 / 27; /* Relación de aspecto real física del álbum abierto */
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+/* Efecto de pliegue o lomo central del álbum abierto */
+.album-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(to right, 
+        rgba(0,0,0,0.15) 0%, 
+        rgba(0,0,0,0.25) 45%, 
+        rgba(0,0,0,0.35) 50%, 
+        rgba(0,0,0,0.25) 55%, 
+        rgba(0,0,0,0.15) 100%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* ==========================================
+   ESTILOS DE AMBOS PANELES (50% DE ANCHO CADA UNO)
+   ========================================== */
+.panel {
+    flex: 1; /* Hace que cada panel ocupe exactamente la mitad del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* LADO IZQUIERDO: TAPA TRASERA */
+.left-panel {
+    background-color: #ffffff;
+    color: #333333;
+    border-right: 1px solid rgba(0, 0, 0, 0.15); /* Unión visual de las páginas */
+}
+
+.left-image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.left-image {
+    width: 100%;
+    height: calc(100% - 85px); /* Deja espacio para el footer */
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* PIE DE PÁGINA IZQUIERDO */
+.left-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 65px;
+}
+
+/* Logo FIFA 26 agrandado para destacar más */
+.fifa26 {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+.legal-text {
+    font-size: 0.58rem;
+    line-height: 1.35;
+    color: #555555;
+    max-width: 65%;
+    padding: 0 10px;
+}
+
+/* Mini badge Panini */
+.panini-mini {
+    display: flex;
+    align-items: center;
+}
+
+.panini-mini img {
+    height: 105px; /* Agrandado 3 veces (35px x 3) */
+    width: auto;
+    object-fit: contain;
+}
+
+/* ==========================================
+   LADO DERECHO: PORTADA PRINCIPAL (FRENTE)
+   ========================================== */
+.right-panel {
+    background-color: #ffffff;
+}
+
+.right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la portada completa de forma proporcional */
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+/* Panel de grupos */
+.grupos-panel {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.grupos-title {
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1a237e;
+    border-bottom: 3px solid #D32F2F;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+/* Grid de 2 columnas para poner grupos de a pares (A-B, C-D...) */
+.grupos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+/* Cada tarjeta de grupo */
+.grupo {
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 0.65rem;
+}
+
+.grupo-header {
+    font-weight: 900;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #1a237e; /* Azul FIFA */
+}
+
+.grupo ul {
+    list-style: none;
+    padding: 4px 8px;
+    background-color: #f0f4ff;
+}
+
+.grupo ul li {
+    padding: 2px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 500;
+    color: #333;
+}
+
+.grupo ul li:last-child {
+    border-bottom: none;
+}
+
+/* Colores alternados por grupo para que se vea como la imagen */
+.grupo-a .grupo-header,
+.grupo-c .grupo-header,
+.grupo-e .grupo-header,
+.grupo-g .grupo-header,
+.grupo-i .grupo-header,
+.grupo-k .grupo-header { background-color: #388E3C; } /* Verde */
+
+.grupo-b .grupo-header,
+.grupo-d .grupo-header,
+.grupo-f .grupo-header,
+.grupo-h .grupo-header,
+.grupo-j .grupo-header,
+.grupo-l .grupo-header { background-color: #D32F2F; } /* Rojo */
