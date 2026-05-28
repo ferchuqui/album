@@ -148,55 +148,63 @@ body {
 /* Panel de grupos */
 .grupos-panel {
     background-color: #ffffff;
-    padding: 20px 25px;
+    padding: 4px 8px;
     border-left: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: flex-start;
 }
 
 .grupos-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #1a237e;
-    border-bottom: 3px solid #D32F2F;
-    padding-bottom: 6px;
-    margin-bottom: 12px;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
 }
 
 /* Grid de 2 columnas para poner grupos de a pares (A-B, C-D...) */
 .grupos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    gap: 1px;
+    overflow: hidden;
+    flex: 1;
 }
 
 /* Cada tarjeta de grupo */
 .grupo {
-    border-radius: 4px;
+    border-radius: 2px;
     overflow: hidden;
-    font-size: 0.65rem;
+    font-size: 0.88rem;
 }
 
 .grupo-header {
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #ffffff;
     text-align: center;
-    padding: 3px 0;
+    padding: 0px 0;
     background-color: #1a237e; /* Azul FIFA */
 }
 
 .grupo ul {
     list-style: none;
-    padding: 4px 8px;
+    padding: 0px 1px;
     background-color: #f0f4ff;
 }
 
 .grupo ul li {
-    padding: 2px 0;
+    padding: 0px 0;
     border-bottom: 1px solid #e0e0e0;
-    font-weight: 500;
+    font-weight: 700;
     color: #333;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .grupo ul li:last-child {
