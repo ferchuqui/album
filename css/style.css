@@ -165,6 +165,7 @@ body {
     border-bottom: 2px solid #D32F2F;
     padding-bottom: 1px;
     margin-bottom: 1px;
+    text-align: center;
 }
 
 /* Grid de 2 columnas para poner grupos de a pares (A-B, C-D...) */
@@ -177,51 +178,146 @@ body {
 }
 
 /* Cada tarjeta de grupo */
+/* Cada tarjeta de grupo estilo Panini */
 .grupo {
-    border-radius: 2px;
+    display: flex;
+    border-radius: 4px;
     overflow: hidden;
-    font-size: 0.88rem;
+    font-size: 0.82rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
 }
 
-.grupo-header {
-    font-weight: 900;
-    font-size: 1.1rem;
+.grupo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.grupo-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.grupo-row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 3px 6px;
     color: #ffffff;
-    text-align: center;
-    padding: 0px 0;
-    background-color: #1a237e; /* Azul FIFA */
-}
-
-.grupo ul {
-    list-style: none;
-    padding: 0px 1px;
-    background-color: #f0f4ff;
-}
-
-.grupo ul li {
-    padding: 0px 0;
-    border-bottom: 1px solid #e0e0e0;
     font-weight: 700;
-    color: #333;
-    line-height: 1.4;
-    text-align: center;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
+    min-height: 23px;
 }
 
-.grupo ul li:last-child {
+.grupo-row:last-child {
     border-bottom: none;
 }
 
-/* Colores alternados por grupo para que se vea como la imagen */
-.grupo-a .grupo-header,
-.grupo-c .grupo-header,
-.grupo-e .grupo-header,
-.grupo-g .grupo-header,
-.grupo-i .grupo-header,
-.grupo-k .grupo-header { background-color: #388E3C; } /* Verde */
+.grupo-row .abbr {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.62rem;
+    font-weight: 900;
+    padding: 2px 4px;
+    border-radius: 2px;
+    min-width: 32px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
 
-.grupo-b .grupo-header,
-.grupo-d .grupo-header,
-.grupo-f .grupo-header,
-.grupo-h .grupo-header,
-.grupo-j .grupo-header,
-.grupo-l .grupo-header { background-color: #D32F2F; } /* Rojo */
+.grupo-row .flag {
+    font-size: 0.95rem;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.grupo-row .name {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Columna vertical derecha con la letra del grupo */
+.grupo-letter {
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    user-select: none;
+}
+
+/* Colores alternados por grupo para coincidir exactamente con el álbum oficial */
+/* Grupo A (Verde) */
+.grupo-a { border-color: #388E3C; }
+.grupo-a .grupo-letter { background-color: #388E3C; }
+.grupo-a .grupo-row { background-color: #66BB6A; }
+
+/* Grupo B (Rojo) */
+.grupo-b { border-color: #C2185B; }
+.grupo-b .grupo-letter { background-color: #D32F2F; }
+.grupo-b .grupo-row { background-color: #EF5350; }
+
+/* Grupo C (Amarillo/Lima) */
+.grupo-c { border-color: #AFB22B; }
+.grupo-c .grupo-letter { background-color: #C0CA33; }
+.grupo-c .grupo-row { background-color: #D4E157; color: #2e3d00; }
+.grupo-c .grupo-row .name { color: #2e3d00; text-shadow: none; }
+
+/* Grupo D (Azul) */
+.grupo-d { border-color: #0D47A1; }
+.grupo-d .grupo-letter { background-color: #0D47A1; }
+.grupo-d .grupo-row { background-color: #1976D2; }
+
+/* Grupo E (Naranja) */
+.grupo-e { border-color: #E65100; }
+.grupo-e .grupo-letter { background-color: #E65100; }
+.grupo-e .grupo-row { background-color: #F57C00; }
+
+/* Grupo F (Verde Azulado) */
+.grupo-f { border-color: #004D40; }
+.grupo-f .grupo-letter { background-color: #004D40; }
+.grupo-f .grupo-row { background-color: #00796B; }
+
+/* Grupo G (Celeste Grisáceo / Lavanda) */
+.grupo-g { border-color: #7986CB; }
+.grupo-g .grupo-letter { background-color: #7986CB; }
+.grupo-g .grupo-row { background-color: #9FA8DA; }
+
+/* Grupo H (Celeste Turquesa) */
+.grupo-h { border-color: #00838F; }
+.grupo-h .grupo-letter { background-color: #00838F; }
+.grupo-h .grupo-row { background-color: #00ACC1; }
+
+/* Grupo I (Morado) */
+.grupo-i { border-color: #4A148C; }
+.grupo-i .grupo-letter { background-color: #4A148C; }
+.grupo-i .grupo-row { background-color: #6A1B9A; }
+
+/* Grupo J (Rosa Melocotón) */
+.grupo-j { border-color: #E91E63; }
+.grupo-j .grupo-letter { background-color: #FF8A80; }
+.grupo-j .grupo-row { background-color: #FFAB91; color: #3e1b00; }
+.grupo-j .grupo-row .name { color: #3e1b00; text-shadow: none; }
+
+/* Grupo K (Fucsia/Magenta) */
+.grupo-k { border-color: #C2185B; }
+.grupo-k .grupo-letter { background-color: #E91E63; }
+.grupo-k .grupo-row { background-color: #EC407A; }
+
+/* Grupo L (Granate/Marrón) */
+.grupo-l { border-color: #4E0D1C; }
+.grupo-l .grupo-letter { background-color: #5C0E20; }
+.grupo-l .grupo-row { background-color: #7A1C31; }
+
