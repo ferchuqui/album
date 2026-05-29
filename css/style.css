@@ -610,19 +610,20 @@ body {
 
 .mascots-brand {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     flex: 1;
     padding-right: 8px;
+    height: 100%;
+    gap: 10px;
 }
 
 .mascots-logo {
-    height: 48px;
+    height: 90%;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-    margin-bottom: 4px;
 }
 
 .brand-text {
