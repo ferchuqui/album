@@ -15,7 +15,7 @@
            ========================================== */
         .right-panel {
             background-color: #ffffff;
-            padding: 30px 35px;
+            padding: 8px 10px;
         }
 
         .right-content {
@@ -28,27 +28,27 @@
         /* Encabezado del panel derecho */
         .right-header {
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 2px;
         }
 
         .wc-title {
-            font-size: 1.4rem;
+            font-size: 1.45rem;
             font-weight: 900;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
             color: #1a237e;
-            border-bottom: 4px solid #D32F2F;
-            padding-bottom: 8px;
+            border-bottom: 2px solid #D32F2F;
+            padding-bottom: 0px;
             display: inline-block;
         }
 
         .wc-subtitle {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             font-weight: 700;
             color: #888;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            margin-top: 4px;
+            margin-top: 0px;
         }
 
         /* Tabla */
@@ -60,26 +60,28 @@
         .wc-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.75rem;
+            font-size: 0.95rem;
         }
 
         .wc-table thead tr {
             background-color: #1a237e;
             color: #ffffff;
+            line-height: 1;
         }
 
         .wc-table thead th {
-            padding: 8px 10px;
+            padding: 1px 3px;
             text-align: left;
             font-weight: 800;
             letter-spacing: 0.5px;
             text-transform: uppercase;
-            font-size: 0.65rem;
+            font-size: 0.8rem;
         }
 
         .wc-table tbody tr {
             border-bottom: 1px solid #eeeeee;
             transition: background-color 0.2s ease;
+            line-height: 1;
         }
 
         .wc-table tbody tr:nth-child(even) {
@@ -91,7 +93,7 @@
         }
 
         .wc-table tbody td {
-            padding: 7px 10px;
+            padding: 1px 3px;
             color: #333;
             font-weight: 500;
         }
@@ -99,7 +101,7 @@
         .wc-table tbody td:first-child {
             color: #999;
             font-weight: 700;
-            font-size: 0.6rem;
+            font-size: 0.8rem;
         }
 
         .wc-table tbody td:last-child {
@@ -113,13 +115,13 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding-top: 12px;
+            padding-top: 1px;
             border-top: 1px solid rgba(0, 0, 0, 0.08);
-            margin-top: 12px;
+            margin-top: 1px;
         }
 
         .panini-right {
-            height: 30px;
+            height: 12px;
             width: auto;
             object-fit: contain;
         }
@@ -160,54 +162,66 @@
 <body>
     <div class="album-container">
 
-        <!-- PANEL IZQUIERDO: TABLA FIFA WORLD CUP 2026 (Página 2 - izquierda) -->
-        <div class="panel right-panel">
-            <div class="right-content">
-
-                <!-- Título principal -->
-                <div class="right-header">
-                    <h1 class="wc-title">FIFA World Cup 2026</h1>
-                    <div class="wc-subtitle">Official Sticker Collection</div>
+        <!-- PANEL IZQUIERDO: 3 SECCIONES DE DISEÑO (Página 2 - izquierda) -->
+        <div class="panel left-panel-p2">
+            
+            <!-- Tarjeta Superior: MyPanini -->
+            <div class="panel-card card-mypanini">
+                <!-- Parte 1: Izquierda (El niño y las 2 pegatinas) -->
+                <div class="mypanini-left">
+                    <img src="images/boy.png" alt="MyPanini Boy" class="mypanini-boy">
+                    <div class="mypanini-stickers-container">
+                        <img src="images/figuarg1.png" alt="Sticker 1" class="mypanini-figu figu-1">
+                        <img src="images/figu2.png" alt="Sticker 2" class="mypanini-figu figu-2">
+                        <img src="images/mypanini.png" alt="MyPanini" class="mypanini-box">
+                    </div>
                 </div>
 
-                <!-- Tabla de grupos / participantes -->
-                <div class="table-wrapper">
-                    <table class="wc-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>País</th>
-                                <th>Confederación</th>
-                                <th>Grupo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>1</td><td>🇺🇸 Estados Unidos</td><td>CONCACAF</td><td>A</td></tr>
-                            <tr><td>2</td><td>🇲🇽 México</td><td>CONCACAF</td><td>A</td></tr>
-                            <tr><td>3</td><td>🇨🇦 Canadá</td><td>CONCACAF</td><td>B</td></tr>
-                            <tr><td>4</td><td>🇧🇷 Brasil</td><td>CONMEBOL</td><td>B</td></tr>
-                            <tr><td>5</td><td>🇦🇷 Argentina</td><td>CONMEBOL</td><td>C</td></tr>
-                            <tr><td>6</td><td>🇫🇷 Francia</td><td>UEFA</td><td>C</td></tr>
-                            <tr><td>7</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra</td><td>UEFA</td><td>D</td></tr>
-                            <tr><td>8</td><td>🇩🇪 Alemania</td><td>UEFA</td><td>D</td></tr>
-                            <tr><td>9</td><td>🇪🇸 España</td><td>UEFA</td><td>E</td></tr>
-                            <tr><td>10</td><td>🇵🇹 Portugal</td><td>UEFA</td><td>E</td></tr>
-                            <tr><td>11</td><td>🇳🇱 Países Bajos</td><td>UEFA</td><td>F</td></tr>
-                            <tr><td>12</td><td>🇧🇪 Bélgica</td><td>UEFA</td><td>F</td></tr>
-                            <tr><td>13</td><td>🇯🇵 Japón</td><td>AFC</td><td>G</td></tr>
-                            <tr><td>14</td><td>🇰🇷 Corea del Sur</td><td>AFC</td><td>G</td></tr>
-                            <tr><td>15</td><td>🇸🇦 Arabia Saudita</td><td>AFC</td><td>H</td></tr>
-                            <tr><td>16</td><td>🇲🇦 Marruecos</td><td>CAF</td><td>H</td></tr>
-                        </tbody>
-                    </table>
+                <!-- Parte 2: Centro (Texto promocional e icono) -->
+                <div class="mypanini-center">
+                   
+                    <h3 class="mypanini-title">GET THE APP!</h3>
+                    <p class="mypanini-text">AND CREATE YOUR <br>OWN STICKER!</p>
                 </div>
 
-                <!-- Footer con logo Panini -->
-                <div class="right-footer-bar">
-                    <img src="images/logopanini.png" alt="Logo Panini" class="panini-right">
-                </div>
-
+                <!-- Parte 3: Derecha (El slot para pegar el cromo) -->
+                 <img src="images/mifigupanini.png" alt="">
+<!--                 <div class="mypanini-sticker-slot">
+                    <div class="slot-border">
+                        <div class="slot-silhouette">
+                            <span class="slot-avatar">👤</span>
+                        </div>
+                        <div class="slot-label">Pega aquí tu cromo MyPanini™</div>
+                        <div class="slot-name-tag">NAME SURNAME</div>
+                    </div>
+                </div> -->
             </div>
+
+            <!-- Tarjeta Central: FIFA Rewards -->
+            <div class="panel-card card-rewards">
+                <div class="rewards-overlay">
+                    <div class="rewards-tag">REWARDS.FIFA.COM</div>
+                    <div class="rewards-info">
+                        <h3 class="rewards-title">LOVE THE GAME</h3>
+                        <p class="rewards-subtitle">REWARD YOUR PASSION</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Inferior: Mascotas / Marca -->
+            <div class="panel-card card-mascots">
+                <div class="mascots-brand">
+                    <img src="images/fifa26.png" alt="FIFA World Cup 2026 Logo" class="mascots-logo">
+                    <div class="brand-text">
+                        <span class="brand-title">WORLD CUP</span>
+                        <span class="brand-year">2026</span>
+                    </div>
+                </div>
+<!--                 <div class="mascots-image-container">
+                    <img src="images/mascotas2026.png" alt="Mascotas Oficiales FIFA 2026" class="mascots-img">
+                </div> -->
+            </div>
+
         </div>
 
 <!-- PANEL DERECHO: GRUPOS DEL MUNDIAL FIFA 2026 -->
@@ -215,92 +229,336 @@
     <h2 class="grupos-title">FIFA WORLD CUP 2026</h2>
     <div class="grupos-grid">
 
+        <!-- Grupo A -->
         <div class="grupo grupo-a">
-            <div class="grupo-header">A</div>
-            <ul>
-                <li>🇲🇽 México</li>
-                <li>🇿🇦 Sudáfrica</li>
-                <li>🇰🇷 Corea del Sur</li>
-                <li>🇨🇿 Chequia</li>
-            </ul>
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">MEX</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/mx.png" alt="Mexico">
+                    <span class="name">Mexico</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">RSA</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/za.png" alt="South Africa">
+                    <span class="name">South Africa</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">KOR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/kr.png" alt="Korea Republic">
+                    <span class="name">Korea Republic</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">CZE</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/cz.png" alt="Czechia">
+                    <span class="name">Czechia</span>
+                </div>
+            </div>
+            <div class="grupo-letter">A</div>
         </div>
 
+        <!-- Grupo B -->
         <div class="grupo grupo-b">
-            <div class="grupo-header">B</div>
-            <ul>
-                <li>🇨🇦 Canadá</li>
-                <li>🇧🇦 Bosnia</li>
-                <li>🇶🇦 Qatar</li>
-                <li>🇨🇭 Suiza</li>
-            </ul>
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">CAN</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ca.png" alt="Canada">
+                    <span class="name">Canada</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">BIH</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ba.png" alt="Bosnia-Herzegovina">
+                    <span class="name">Bosnia-Herzegovina</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">QAT</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/qa.png" alt="Qatar">
+                    <span class="name">Qatar</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">SUI</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ch.png" alt="Switzerland">
+                    <span class="name">Switzerland</span>
+                </div>
+            </div>
+            <div class="grupo-letter">B</div>
         </div>
 
-                <div class="grupo grupo-c">
-            <div class="grupo-header">C</div>
-            <ul>
-                <li>🇲🇽 Brasil</li>
-                <li>🇿🇦 Marruecos</li>
-                <li>🇰🇷 Haiti</li>
-                <li>🇨🇿 Escocia</li>
-            </ul>
+        <!-- Grupo C -->
+        <div class="grupo grupo-c">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">BRA</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/br.png" alt="Brazil">
+                    <span class="name">Brazil</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">MAR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ma.png" alt="Morocco">
+                    <span class="name">Morocco</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">HAI</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ht.png" alt="Haiti">
+                    <span class="name">Haiti</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">SCO</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/gb-sct.png" alt="Scotland">
+                    <span class="name">Scotland</span>
+                </div>
+            </div>
+            <div class="grupo-letter">C</div>
         </div>
 
+        <!-- Grupo D -->
         <div class="grupo grupo-d">
-            <div class="grupo-header">D</div>
-            <ul>
-                <li>🇨🇦 USA</li>
-                <li>🇧🇦 Paraguay</li>
-                <li>🇶🇦 Australia</li>
-                <li>🇨🇭 Turkiye</li>
-            </ul>
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">USA</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/us.png" alt="USA">
+                    <span class="name">USA</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">PAR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/py.png" alt="Paraguay">
+                    <span class="name">Paraguay</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">AUS</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/au.png" alt="Australia">
+                    <span class="name">Australia</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">TUR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/tr.png" alt="Turkiye">
+                    <span class="name">Turkiye</span>
+                </div>
+            </div>
+            <div class="grupo-letter">D</div>
         </div>
 
-                        <div class="grupo grupo-e">
-            <div class="grupo-header">E</div>
-            <ul>
-                <li>🇲🇽 Germany</li>
-                <li>🇿🇦 Curaçao</li>
-                <li>🇰🇷 Costa de Marfil</li>
-                <li>🇨🇿 Ecuador</li>
-            </ul>
+        <!-- Grupo E -->
+        <div class="grupo grupo-e">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">GER</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/de.png" alt="Germany">
+                    <span class="name">Germany</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">CUW</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/cw.png" alt="Curaçao">
+                    <span class="name">Curaçao</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">CIV</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ci.png" alt="Côte d'Ivoire">
+                    <span class="name">Côte d'Ivoire</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">ECU</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ec.png" alt="Ecuador">
+                    <span class="name">Ecuador</span>
+                </div>
+            </div>
+            <div class="grupo-letter">E</div>
         </div>
 
+        <!-- Grupo F -->
         <div class="grupo grupo-f">
-            <div class="grupo-header">F</div>
-            <ul>
-                <li>🇨🇦 Netherlands</li>
-                <li>🇧🇦 Japan</li>
-                <li>🇶🇦 Sweden</li>
-                <li>🇨🇭 Tunisia</li>
-            </ul>
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">NED</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/nl.png" alt="Netherlands">
+                    <span class="name">Netherlands</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">JPN</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/jp.png" alt="Japan">
+                    <span class="name">Japan</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">SWE</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/se.png" alt="Sweden">
+                    <span class="name">Sweden</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">TUN</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/tn.png" alt="Tunisia">
+                    <span class="name">Tunisia</span>
+                </div>
+            </div>
+            <div class="grupo-letter">F</div>
         </div>
 
-                               <div class="grupo grupo-g">
-            <div class="grupo-header">G</div>
-            <ul>
-                <li>🇲🇽 Belgica</li>
-                <li>🇿🇦 Egipto</li>
-                <li>🇰🇷 Iran</li>
-                <li>🇨🇿 New Zealand</li>
-            </ul>
+        <!-- Grupo G -->
+        <div class="grupo grupo-g">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">BEL</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/be.png" alt="Belgium">
+                    <span class="name">Belgium</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">EGY</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/eg.png" alt="Egypt">
+                    <span class="name">Egypt</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">IRN</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ir.png" alt="IR Iran">
+                    <span class="name">IR Iran</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">NZL</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/nz.png" alt="New Zealand">
+                    <span class="name">New Zealand</span>
+                </div>
+            </div>
+            <div class="grupo-letter">G</div>
         </div>
 
+        <!-- Grupo H -->
         <div class="grupo grupo-h">
-            <div class="grupo-header">H</div>
-            <ul>
-                <li>🇨🇦 España</li>
-                <li>🇧🇦 Cabo Verde</li>
-                <li>🇶🇦 Arabia Saudita</li>
-                <li>🇨🇭 Uruguay</li>
-            </ul>
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">ESP</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/es.png" alt="Spain">
+                    <span class="name">Spain</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">CPV</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/cv.png" alt="Cabo Verde">
+                    <span class="name">Cabo Verde</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">KSA</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/sa.png" alt="Saudi Arabia">
+                    <span class="name">Saudi Arabia</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">URU</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/uy.png" alt="Uruguay">
+                    <span class="name">Uruguay</span>
+                </div>
+            </div>
+            <div class="grupo-letter">H</div>
         </div>
 
+        <!-- Grupo I -->
+        <div class="grupo grupo-i">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">FRA</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/fr.png" alt="France">
+                    <span class="name">France</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">SEN</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/sn.png" alt="Senegal">
+                    <span class="name">Senegal</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">IRQ</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/iq.png" alt="Iraq">
+                    <span class="name">Iraq</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">NOR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/no.png" alt="Norway">
+                    <span class="name">Norway</span>
+                </div>
+            </div>
+            <div class="grupo-letter">I</div>
+        </div>
+
+        <!-- Grupo J -->
+        <div class="grupo grupo-j">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">ARG</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/ar.png" alt="Argentina">
+                    <span class="name">Argentina</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">ALG</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/dz.png" alt="Algeria">
+                    <span class="name">Algeria</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">AUT</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/at.png" alt="Austria">
+                    <span class="name">Austria</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">JOR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/jo.png" alt="Jordan">
+                    <span class="name">Jordan</span>
+                </div>
+            </div>
+            <div class="grupo-letter">J</div>
+        </div>
+
+        <!-- Grupo K -->
+        <div class="grupo grupo-k">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">POR</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/pt.png" alt="Portugal">
+                    <span class="name">Portugal</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">COD</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/cd.png" alt="Congo DR">
+                    <span class="name">Congo DR</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">UZB</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/uz.png" alt="Uzbekistan">
+                    <span class="name">Uzbekistan</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">COL</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/co.png" alt="Colombia">
+                    <span class="name">Colombia</span>
+                </div>
+            </div>
+            <div class="grupo-letter">K</div>
+        </div>
+
+        <!-- Grupo L -->
+        <div class="grupo grupo-l">
+            <div class="grupo-body">
+                <div class="grupo-row">
+                    <span class="abbr">ENG</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/gb-eng.png" alt="England">
+                    <span class="name">England</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">CRO</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/hr.png" alt="Croatia">
+                    <span class="name">Croatia</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">GHA</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/gh.png" alt="Ghana">
+                    <span class="name">Ghana</span>
+                </div>
+                <div class="grupo-row">
+                    <span class="abbr">PAN</span>
+                    <img class="flag-img" src="https://flagcdn.com/w20/pa.png" alt="Panama">
+                    <span class="name">Panama</span>
+                </div>
+            </div>
+            <div class="grupo-letter">L</div>
+        </div>
 
         <!-- Repetí el patrón para todos los grupos C hasta L -->
         <!-- Agrega un div.grupo por cada grupo con su letra y sus 4 selecciones -->
 
     </div>
 </div>
+</div> <!-- Cierre de .album-container -->
 
 </body>
 
