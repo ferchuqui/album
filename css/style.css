@@ -610,8 +610,8 @@ body {
 
 .mascots-brand {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex: 1;
     padding-right: 8px;
@@ -620,7 +620,7 @@ body {
 }
 
 .mascots-logo {
-    height: 90%;
+    height: 75%;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
@@ -629,12 +629,13 @@ body {
 .brand-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .brand-title {
     font-size: 0.52rem;
     font-weight: 900;
-    color: #00e5ff;
+    color: black;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -642,7 +643,7 @@ body {
 .brand-year {
     font-size: 1.1rem;
     font-weight: 900;
-    color: #ffffff;
+    color: black;
     line-height: 0.9;
 }
 
