@@ -612,52 +612,51 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex: 0 0 auto;
-    width: fit-content;
-    max-width: 220px;
+    width: 300px; /* Fixed width to ensure logo and text match perfectly */
     padding-right: 16px;
     height: 100%;
-    gap: 10px;
+    gap: 12px;
     min-width: 0;
 }
 
 .mascots-logo {
-    width: 100%;
-    max-width: 100%;
+    width: 100%; /* Spans full container width */
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
 .brand-title {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    width: max-content;
-    gap: 2px;
+    align-items: stretch;
+    gap: 4px;
 }
 
 .brand-title-text,
 .brand-title-year {
     display: block;
-    width: 100%;
-    text-align: center;
+    width: 100%; /* Spans full container width */
+    text-align: justify;
+    text-align-last: justify;
+    text-justify: inter-character;
     font-weight: 900;
-    color: black;
+    color: #000000;
     text-transform: uppercase;
     white-space: nowrap;
 }
 
 .brand-title-text {
-    font-size: clamp(0.95rem, 2vw, 1.25rem);
-    letter-spacing: 0.8px;
+    font-size: 38px;
+    letter-spacing: 0.5px;
 }
 
 .brand-title-year {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    letter-spacing: 1px;
-    padding-top: 2px;
+    font-size: 64px;
+    letter-spacing: 0.5px;
+    line-height: 1;
 }
 /* 
 .brand-year {
